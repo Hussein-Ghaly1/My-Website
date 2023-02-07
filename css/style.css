@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    /* background-image: url("../Assets/circle-scatter-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: red;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    background-color: red;
+    height: 99.4%;
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }                
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    } 
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .container {
+        width:1170px;
+    } 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 130px;
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+}
+
+header ul li {
+    padding: 0 20px;
+}
+
+@media (max-width: 767px) { 
+    header ul li {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    header .logo {
+        width: 100px;
+    }
+}
+
+header ul li a {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: orange;
+}
+
+main {
+    height: calc(100vh - (112.8px + 33px));
+}
+
+main .container {
+    height: calc(100vh - (112.8px + 33px));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .container .details {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-basis: 45%;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    main .container .details {
+        flex-basis: 100%;
+    }
+    main .container .details .images {
+        flex-basis: 100%;
+    }
+        
+}
+    
+
+main .container .details h1 {
+    width: 100%;
+    margin: 0;
+    color: #212121;
+}
+
+main .container .details p {
+    width: 100%;
+    margin: 0;
+    color: #555;
+    line-height: 2;
+    
+}
+
+main .container .details span {
+    color: orange;
+    
+} 
+
+main .container .details a {
+    display: flex;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #212121;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+main .container .images {
+    flex-basis: 45%;
+}
+
+footer {
+    background-color: #212121;
+}
+
+footer .container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+footer .mail {
+    margin: 0;
+    width: calc(98% / 3);
+    color: rgb(81 91 109);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer div {
+    width: calc(98% / 3);
+}
+
+footer span {
+
+    width: calc(98% / 3);
+    color: rgb(81 91 109);
+}
+
+footer div a {
+    color: rgb(132, 138, 150);
+    font-size: 20px;
+    margin: 5px;
+}
+
+@media (max-width: 767px) {
+    footer .mail {
+        font-size: 10px;
+    }
+
+    footer div a {
+        font-size: 12px;
+    }
+
+    footer span {
+        font-size: 10px;
+    }
+}
